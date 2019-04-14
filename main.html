@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="iro.min.js"></script>
+    <div id="color-picker-container"></div>
+    <script>var colorPicker = new iro.ColorPicker('#color-picker-container');</script>
+    <p>Подключим библиотеку</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+
+    <p>Функция <code>_.defaults()</code> добавляет отсутствующие свойства.</p>
+    <script>
+        var user = {
+            name: 'Вася'
+        };
+
+        _.defaults(user, {
+            name: 'Не указано',
+            employer: 'Не указан'
+        });
+
+        alert( user.name ); // Вася
+        alert( user.employer ); // Не указан
+        alert( _.size(user) ); // 2
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
